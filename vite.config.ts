@@ -3,6 +3,12 @@ import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    port: 5001,
+    strictPort: true,
+    cors: true,
+    origin: "http://localhost:5001",
+  },
   test: {
     environment: "jsdom",
     setupFiles: ["src/test-setup.ts"],

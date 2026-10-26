@@ -6,4 +6,6 @@ A question becomes a dashboard only when every block comes from primitives.
 
 [primitives](https://github.com/hybridappdev/primitives)
 
+Split loads this app from port 5001. A blotter release does not rebuild it.
+
 MIT

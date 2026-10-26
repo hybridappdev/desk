@@ -7,18 +7,23 @@
   "engines": {
     "node": ">=20"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "@hybridappdev/primitives", "@hybridappdev/gate"]
+  },
   "scripts": {
     "dev": "vite",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "gate": "gate"
   },
   "dependencies": {
-    "@hybridappdev/primitives": "file:../primitives",
+    "@hybridappdev/primitives": "github:hybridappdev/primitives",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-router": "^7.9.4"
   },
   "devDependencies": {
+    "@hybridappdev/gate": "github:hybridappdev/gate",
     "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^14.6.1",
     "@types/node": "^26.6.5",
